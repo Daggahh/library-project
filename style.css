@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f9fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    border: 2px solid #000;
+    box-shadow:  8px 8px 25px rgba(0, 0, 0, 0.7);
+    padding: 15px;
+}
+
+h1{
+    margin-bottom: 1rem;
+    color: #333;
+    font-size: 3em;
+}
+
+button {
+    background-color: #3498db;
+    font-size: 1.5em;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.form.hidden {
+    display: none;
+}
+
+.form label {
+    font-size: 1.5em;
+    margin: 0.5rem 0 0.2rem;
+}
+
+.form input {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin-bottom: 0.5rem;
+    font-size: 18px;
+}
+
+.books-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.book-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    width: 90%;
+    height: auto;
+    text-align: left;
+    position: relative;     
+}
+
+.book-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #3498db;
+}
+
+.book-card p {
+    margin: 0.3rem 0;
+    color: #555;
+}
+
+.buttonDiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.book-card button {
+    width: fit-content;
+    background-color: #e74c3c;
+    font-size: initial;
+}  
+
+.toggle-read {
+    background-color: #2ecc71;
+}
+
+button.toggle-read:hover{
+    background-color: #27ae60;
+}
+
+button.delete:hover{
+    background-color: #c0392b;
+}
